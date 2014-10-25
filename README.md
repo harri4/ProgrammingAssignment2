@@ -1,3 +1,28 @@
+### Testing
+
+source("cachematrix.R") 
+m=rbind(c(1, 1), c(0, 1))
+c <- makeCacheMatrix(m)
+
+##1st call
+cacheSolve(m)
+
+##output:
+     [,1] [,2]
+[1,]    1   -1
+[2,]    0    1
+
+
+##2nd call
+cacheSolve(m)
+
+##output:
+getting cached data
+     [,1] [,2]
+[1,]    1   -1
+[2,]    0    1
+
+
 ### Introduction
 
 This second programming assignment will require you to write an R
